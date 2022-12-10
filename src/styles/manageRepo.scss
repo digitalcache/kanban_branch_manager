@@ -11,6 +11,7 @@
     }
     .repo-name{
         margin-top: -10px;
+        word-break: break-all;
         &.dark-theme-name{
             color: $dark-theme-light;
         }
