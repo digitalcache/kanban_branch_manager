@@ -6,8 +6,9 @@ main{
     grid-template-columns: 20% 60%;
     grid-gap: 20%;
 
-    @media (max-width: 600px) {
+    @media (max-width: 800px) {
         grid-template-columns: 1fr;
+        margin: 100px 50px 0 50px;
     }
 
     #h1{
@@ -16,8 +17,14 @@ main{
     
     form{
         margin-top: 100px;
+        @media (max-width: 800px) {
+            margin-top: 40px;
+        }
         .input-content{
             display: flex;
+            @media (max-width: 800px) {
+                flex-direction: column;
+            }
             .url{
                 padding: 8px 0;
                 outline:none;
@@ -25,6 +32,9 @@ main{
                 border-width: 0 0 1px;
                 background-color: transparent;
                 min-width: 500px;
+                @media (max-width: 800px) {
+                    min-width: 300px;
+                }
                 &.dark-theme-url{
                     color: $dark-theme-light;
                     border-color:$dark-theme-light;
@@ -49,6 +59,10 @@ main{
                 &.light-theme-submit{
                     background: $light-theme-light-gray;
                     color: $light-theme-dark;
+                }
+                @media (max-width: 800px) {
+                    margin-top: 10px;
+                    margin-left: 0px;
                 }
             }
         }

@@ -6,12 +6,20 @@
     gap: 0 20px;
     margin-top: 100px;
     padding: 0 150px;
+    @media (max-width: 800px) {
+        padding: 0 20px;
+        margin-top: 20px;
+    }
     .back{
         cursor: pointer;
     }
     .repo-name{
         margin-top: -10px;
         word-break: break-all;
+        @media (max-width: 800px) {
+            font-size: 16px;
+            margin-top: 0;
+        }
         &.dark-theme-name{
             color: $dark-theme-light;
         }
@@ -55,6 +63,9 @@
         &.light-theme-title{
             color: $light-theme-charcoal;
         }
+        @media (max-width: 800px) {
+            margin-top: 20px;
+        }
     }
     .branch-manage-button{
         display: flex;
@@ -64,6 +75,12 @@
         padding: 27px 28px;
         margin-bottom: 10px;
         cursor: pointer;
+        @media (max-width: 800px) {
+            padding: 5px;
+            font-size: 12px;
+            max-width: 100px;
+            word-break: break-all;
+        }
         &.dark-theme-button{
             background: $dark-theme-maire;
             &:hover{
