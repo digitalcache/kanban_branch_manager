@@ -1,0 +1,85 @@
+@import "/src/styles/variables";
+
+.manage-section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0 20px;
+    margin-top: 100px;
+    padding: 0 150px;
+    .back{
+        cursor: pointer;
+    }
+    .repo-name{
+        margin-top: -10px;
+        &.dark-theme-name{
+            color: $dark-theme-light;
+        }
+        &.light-theme-name{
+            color: $light-theme-dark;
+        }
+    }
+    .repo-info{
+        margin-top: 30px;
+        line-height: 140%;
+        &.dark-theme-info{
+            color: $dark-theme-silver;
+        }
+        &.light-theme-info{
+            color: $light-theme-charcoal;
+        }
+    }
+    .rating-info{
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+        img{
+            width: 14px;
+        }
+        .rating-count{
+            margin-left: 10px;
+            &.dark-theme-rating-info{
+                color: $dark-theme-silver;
+            }
+            &.light-theme-rating-info{
+                color: $light-theme-charcoal;
+            }
+        }
+    }
+    .progress-title{
+        margin-top: 100px;
+        margin-bottom: 20px;
+        &.dark-theme-title{
+            color: $dark-theme-silver;
+        }
+        &.light-theme-title{
+            color: $light-theme-charcoal;
+        }
+    }
+    .branch-manage-button{
+        display: flex;
+        border-radius: 4px;
+        display: flex;
+        justify-content: space-between;
+        padding: 27px 28px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        &.dark-theme-button{
+            background: $dark-theme-maire;
+            &:hover{
+                background: $dark-theme-charcoal;
+            }
+        }
+        &.light-theme-button{
+            background: $light-theme-light-gray;
+            &:hover{
+                background: $light-theme-gray;
+            }
+        }
+        .arrow{
+            &.disabled{
+                opacity: 0.1;
+                pointer-events: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,68 @@
+@import "/src/styles/variables";
+
+main{
+    margin: 200px 150px 0 150px;
+    display: grid;
+    grid-template-columns: 20% 60%;
+    grid-gap: 20%;
+
+    @media (max-width: 600px) {
+        grid-template-columns: 1fr;
+    }
+
+    #h1{
+        line-height: 120%;
+    }
+    
+    form{
+        margin-top: 100px;
+        .input-content{
+            display: flex;
+            .url{
+                padding: 8px 0;
+                outline:none;
+                font-size: 16px;
+                border-width: 0 0 1px;
+                background-color: transparent;
+                min-width: 500px;
+                &.dark-theme-url{
+                    color: $dark-theme-light;
+                    border-color:$dark-theme-light;
+                }
+                &.light-theme-url{
+                    color: $light-theme-dark;
+                    border-color:$light-theme-dark;
+                }
+            }
+            .submit{
+                padding: 8px 16px;
+                margin-left: 10px;
+                height: 38px;
+                border: none;
+                border-radius: 4px;
+                font-size: 16px;
+                cursor: pointer;
+                &.dark-theme-submit{
+                    background: $dark-theme-maire;
+                    color: $dark-theme-light;
+                }
+                &.light-theme-submit{
+                    background: $light-theme-light-gray;
+                    color: $light-theme-dark;
+                }
+            }
+        }
+        .error {
+            font-size: 16px;
+            margin-top: 20px;
+            font-weight: normal;
+            &.dark-theme-error{
+                color: $dark-theme-red;
+            }
+            &.light-theme-error{
+                color: $light-theme-red;
+            }
+        }
+       
+    }
+}

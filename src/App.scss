@@ -1,0 +1,40 @@
+@import "/src/styles/variables";
+
+* { 
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $dark-theme-black;
+  color: $dark-theme-light;
+  font-family: 'Inter', sans-serif;
+}
+
+.text-lg{
+  font-weight: 600; 
+  font-size: 48px; 
+  line-height: 100%; 
+  letter-spacing: -0.05em;
+}
+.text-md{
+  font-weight: 400; 
+  font-size: 14px; 
+  line-height: 160%; 
+  letter-spacing: -0.0125em;
+}
+.text-xs{
+  font-weight: 400; 
+  font-size: 12px; 
+  line-height: 15px; 
+  letter-spacing: -0.0125em;
+}
+
+.logo{
+  cursor: pointer;
+}
+
+.not-found{
+  margin-left: 200px;
+}
